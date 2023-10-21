@@ -1,0 +1,274 @@
+/* padronizando todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: inherit, sans-serif;
+}
+
+/* permitindo o uso da função grid */
+.container {
+    display: grid;
+}
+
+/* Criando o cabeçalho e menu das paginas */
+header {
+    grid-column-start: 1;
+    grid-column-end: 12;
+    display: flex;
+    background-color: #231f25;
+    box-shadow: 0px 3px 12px #231f25;
+}
+
+.title{
+    display: flex;
+    font-size: 22px;
+    color: white;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 4rem;
+}
+
+.nav_list{
+    display: flex;
+    align-items: center;
+}
+
+.nav_list ul {
+    display: flex;
+    justify-content: right;
+    list-style: none;
+}
+
+.nav_item {
+    margin: 0 15px;
+}
+
+.nav_link {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+/* Tela inicial */
+.texto h1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    color: #231f25;
+    font-size: 50px;
+    margin-left: 80px;
+}
+
+p {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    color: #231f25;
+    font-size: 28px;
+    padding-top: 250px;
+    margin-left: 80px;
+}
+
+.img_linkedin img { 
+    max-width: 35px;
+    height: auto;
+    padding-top: 50px;
+    margin-left: 80px;
+}
+
+.principal {
+    grid-column-start: 4;
+    grid-column-end: 10;
+    max-width: 180px;
+    height: auto;
+    padding-top: 65px;
+}
+
+/* Criando e configurando o rodape */
+footer {
+    grid-column-start: 1;
+    grid-column-end: 12;
+    background-color: #231f25;
+    color: white;
+    text-align: center;
+    font-family: inherit, sans-serif;
+}
+
+footer h1 {
+    margin-left: 20px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.contato li {
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    margin-left: 20px;
+    font-size: 20px;
+    list-style: none;
+    margin-bottom: 5px;
+    padding-right: 30px;
+}
+
+input {
+    width: 400px;
+    height: 2vw;
+}
+
+.contato ul {
+    display: flex;
+    color:white; 
+    align-items: center;
+    justify-content: center;
+}
+
+button { 
+    border-radius: 10px;
+    box-shadow: #231f25;
+    width: 130px;
+    height: 40px;
+    color: #231f25;
+    font-size: 16px;
+    font-family: inherit, sans-serif;
+    background-color: white;
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+
+/* Conteudo da página "sobre mim" */
+.texto_2 h1 {
+    padding-top: 40px;
+    font-family: inherit, sans-serif;
+    font-size: 32px;
+    color: #231f25;
+    margin-left: 20px;
+}
+
+.resumo {
+    grid-column-start: 1;
+    grid-column-end: 12;
+}
+
+.texto_2 p {
+    padding-top: 30px ;
+    padding-right: 130px;
+    text-align: justify;
+    line-height: 50px;
+}
+
+.principal_2 h1 {
+    padding-top: 40px;
+    margin-left: 20px;
+    font-size: 32px;
+    font-family: inherit, sans-serif;
+    color: #231f25;
+}
+
+.principal_2 { 
+    grid-column-start: 1;
+    grid-column-end: 12;
+}
+
+.principal_2 p {
+    padding-top: 30px ;
+    padding-right: 130px;
+    text-align: justify;
+    line-height: 20px;
+    margin-bottom: 40px;
+}
+
+/* Conteudo da página minha experiência */
+.experiencia { 
+    grid-column-start: 1;
+    grid-column-end: 12;
+}
+
+.texto_3 {
+    padding-top: 30px;
+    margin-left: 30px;
+    font-size: 32px;
+    font-family: inherit, sans-serif;
+    color: #231f25;
+}
+
+.minha_experiencia {
+    grid-column-start: 3;
+    grid-column-end: 10;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #231f25;
+    margin-bottom: 40px;
+    border-width: 1px;
+    box-shadow: 0px 3px 12px #231f25;
+    line-height: 22px;
+}
+
+.texto_4 {
+    margin-left: 30px;
+    padding-top: 35px;
+    font-size: 26px;
+    font-family: inherit, sans-serif;
+    color: #231f25;
+}
+
+.minha_experiencia p {
+    margin-left: 30px;
+    padding-top: 45px;
+    margin-bottom: 40px;
+    font-size: 24;
+    font-family: inherit, sans-serif;
+    
+}
+
+.minha_experiencia ul {
+    margin-left: 60px;
+    font-size: 22px;
+    font-family: inherit, sans-serif;
+    line-height: 30px;
+}
+
+.trabalho {
+    font-size: 20px;
+    font-family: inherit, sans-serif;
+}
+
+/* para dispositivos movéis */
+@media only screen and (max-width: 767px) {
+    .wrapper {
+        grid-column-start: 1;
+        grid-column-end: 1;
+
+    }
+
+    .img_linkedin {
+        grid-column-start: 1;
+        grid-column-end: 1;
+
+    }
+
+    .principal {
+        grid-column-start: 1;
+        grid-column-end: 1;
+
+    }
+
+    .minha_experiencia {
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+
+    .resumo {
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+
+    .principal_2 {
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+}    

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <!-- criando o link com o estilo.css -->
+    <link rel="stylesheet" href="css/estilo.css">
+    
+</head>
+<body>
+    <!-- criando o cabeçalho da pagina -->
+    <header class="container">
+        <nav class="container menu">
+            <div class="title">
+                <h1><strong>Welyson Filipe</strong></h1>
+            </div>
+            <div class="nav_list">
+                <ul>
+                    <li class="nav_item"><a href="index.html" class="nav_link">Home</a></li>
+                    <li class="nav_item"><a href="sobre.html" class="nav_link">Sobre mim</a></li>
+                    <li class="nav_item"><a href="experiencia.html" class="nav_link">Experiência Profissional</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- conteudo da pagina -->
+    <div class="container wrapper">
+        <aside class="texto">
+            <p><strong>OLÁ PESSOAS,</strong></p>
+            <h1><strong>EU SOU UM <br> DESENVOLVEDOR WEB</strong></h1>
+            <div class="img_linkedin">
+                <a href="https://www.linkedin.com/in/welyson-filipe/" title="Perfil do LinkedIn">
+                    <img src="imagens/linkedin.png">
+                </a>
+            </div>
+
+        </aside>
+
+        <section class="principal">
+            <img src="imagens/dev.png">
+        </section>
+        <!-- criando o rodapé -->
+        <footer class="container rodape">
+            <h1>Cadastre-se agora e aguarde o nosso contato:</h1>
+            <div class="contato">
+               <ul>
+                <li>
+                    <label for="nome">Nome: </label>
+                    <input type="text" id="nome" placeholder="Digite o seu nome">
+                </li>
+                <li>
+                    <label for="email">E-mail: </label>
+                    <input type="text" id="email" placeholder="Digite seu E-mail">
+                </li>
+                <li>
+                    <label for="telefone">Telefone: </label>
+                    <input type="text" id="telefone" placeholder="Digite seu telefone">
+                </li>
+               </ul>
+               <button type="button" onclick="limpar()">Enviar</button>
+            </div>
+        </footer>
+    </div>
+    <!-- criando o link com o script.js -->
+    <script src="script.js" defer ></script> 
+</body>
+</html>
